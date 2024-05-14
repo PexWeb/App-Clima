@@ -1,0 +1,16 @@
+{
+  "name": "app-clima-nueva",
+  "version": "1.0.0",
+  "description": "Aplicación de clima",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PexWeb",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.75.0"
+  }
+}

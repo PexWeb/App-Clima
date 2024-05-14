@@ -1,0 +1,11 @@
+@use '../base/mixins' as m;
+.atribucion{
+    text-align: center;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    @include m.celular {
+        margin-bottom: 1rem;
+    }
+}

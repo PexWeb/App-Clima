@@ -1,0 +1,17 @@
+{
+    "name": "proyecto/app-clima",
+    "description": "App simple para ver el clima usando javascript y php para obtner los datos",
+    "autoload": {
+        "psr-4": {
+            "proyecto\\AppClima\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "PexWeb"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

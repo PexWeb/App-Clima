@@ -1,0 +1,65 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+.por-horas{
+    overflow: hidden;
+    display: flex;
+    background-color: v.$colorTarjetas;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 21px 3px rgba(0,0,0,0.36);
+        -moz-box-shadow: 0px 0px 21px 3px rgba(0,0,0,0.36);
+        box-shadow: 0px 0px 21px 3px rgba(0,0,0,0.36);
+    @include m.celular {
+        border-radius: 1rem;
+    }
+    h2{
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        @include m.celular {
+            margin-left: 0;
+        }
+    }
+    @include m.celular {
+        padding: 1rem;
+    }
+    .horas{        
+        display: flex;
+        align-items: flex-end;
+        gap: 1rem;
+        overflow-x:auto;
+        height: 30rem;
+        padding-top: 1rem;
+        @include m.celular {
+            height: 15rem;
+            gap: .5rem
+        }
+        .hora{
+            -webkit-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.15);
+            -moz-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.15);
+            box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.15);
+            height: 100%;
+            width: 8rem;
+            background-color: v.$colorTarjetaPrincipal;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+            padding: 1rem;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+            @include m.celular {
+                width: 5.2rem;
+                padding: .5rem;
+                h3{
+                    font-size: 16px;
+                }
+            }
+        }
+        
+    }
+    
+
+}

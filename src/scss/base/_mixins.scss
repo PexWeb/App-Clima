@@ -1,0 +1,11 @@
+@use '../base/variables' as v;
+@mixin celular{
+    @media (max-width: v.$celular){
+        @content;
+    }
+}
+@mixin escritorio{
+    @media (min-width: v.$escritorio){
+        @content;
+    }
+}

@@ -1,0 +1,13 @@
+@use '../base/variables' as v;
+.mensaje{
+    background-color: v.$colorTarjetaPrincipal;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+    text-align: center;
+    p{
+        margin: 0;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}

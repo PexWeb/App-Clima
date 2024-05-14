@@ -1,0 +1,18 @@
+@use '../base/variables' as v;
+/* width */
+::-webkit-scrollbar {
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: v.$colorBarraScrollFondo;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: v.$colorBarraScroll; 
+    border-radius: 5px;
+  }

@@ -1,0 +1,57 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+
+.webp body{    
+    background-image: URL('../img/background-pc.webp');
+    background-size: cover;
+    @include m.celular {
+        background-image: URL('../img/background-mobile.webp');    
+    }
+} 
+
+.no-webp body{
+    background-image: URL('../img/background-pc.jpg');
+    background-size: cover;
+    @include m.celular {
+        background-image: URL('../img/background-mobile.jpg');    
+    }
+}
+
+body{
+    font-size: 1.6rem;
+    color: v.$colorTexto;
+    background-color: v.$celeste;
+    font-family: v.$fuentePrincipal;
+    @include m.celular {
+        h1{
+            font-size: 25px;
+        }
+        h2{
+            font-size: 20px;
+        }
+        h3{
+            font-size: 16px;
+        }
+    }
+}
+main{
+    width: 80%;
+    max-width: 150rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    @include m.celular {
+        width: 98%;
+    }
+}
+h1,h2{
+    margin: 0;
+}
+
+
