@@ -198,7 +198,7 @@ function esHoy(fecha){//Revisa si la fecha enviada es la de hoy
     // Comparar si la fecha dada es igual a la fecha actual
     const fechaDada = new Date(fecha);
     if (
-    fechaDada.getUTCDate() === fechaActual.getUTCDate() &&
+    fechaDada.getUTCDate() === fechaActual.getDate() &&
     fechaDada.getMonth() === fechaActual.getMonth() &&
     fechaDada.getFullYear() === fechaActual.getFullYear()
     ) {
